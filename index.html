@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy & Data Deletion | eCQuiz</title>
+    <title>Privacy Policy | eCQuiz</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #007AFF;
-            --background: #E6F4FE;
+            --background: #E6F4FE; /* Matching your app's adaptive icon color */
             --text-main: #1C1C1E;
             --text-secondary: #636366;
             --surface: #FFFFFF;
             --border: #E5E5EA;
-            --danger: #FF3B30;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--background);
             color: var(--text-main);
             line-height: 1.6;
@@ -47,7 +46,12 @@
             font-weight: 700;
             font-size: 32px;
             color: var(--primary);
-            margin: 0;
+            margin: 0 0 8px 0;
+        }
+
+        .effective-date {
+            color: var(--text-secondary);
+            font-size: 14px;
         }
 
         h2 {
@@ -58,59 +62,100 @@
             padding-left: 12px;
         }
 
-        .deletion-box {
-            background-color: #FFF5F5;
-            border: 1px solid #FFDADA;
-            padding: 24px;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
-        .deletion-box h3 {
-            color: var(--danger);
-            margin-top: 0;
-        }
-
         p, li {
             font-size: 16px;
             color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         footer {
             margin-top: 48px;
             padding-top: 24px;
             border-top: 1px solid var(--border);
+            font-size: 14px;
             text-align: center;
             color: var(--text-secondary);
-            font-size: 14px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>eCQuiz Data Management</h1>
-            <p>Privacy Policy & Account Deletion Requests</p>
+            <h1>eCQuiz</h1>
+            <div class="effective-date">Privacy Policy | Effective Date: March 28, 2026</div>
         </header>
 
-        <section id="policy">
-            <h2>1. Data Collection</h2>
-            <p>eCQuiz collects your Name, Email, and Quiz Performance data to facilitate educational assessments.</p>
-        </section>
+        <section>
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy describes how <strong>eCQuiz</strong> ("we," "our," or "the App") handles your data. We are committed to protecting the privacy of our students and teachers while ensuring high standards of academic integrity.</p>
 
-        <!-- THIS SECTION IS FOR GOOGLE'S DELETE ACCOUNT URL -->
-        <section id="deletion" class="deletion-box">
-            <h3>🔴 Account & Data Deletion Request</h3>
-            <p>Users of <strong>eCQuiz</strong> can request the permanent deletion of their account and all associated data by following these steps:</p>
-            <ol>
-                <li>Send an email to <strong>support@aopalero.dev</strong></li>
-                <li>Use the subject line: <strong>"Account Deletion Request - [Your Registered Email]"</strong></li>
-                <li>Our team will verify your identity and process the deletion within <strong>7 business days</strong>.</li>
-            </ol>
-            <p><strong>What is deleted:</strong> Your profile information, all created quizzes, and all stored student scores. Once deleted, this data cannot be recovered.</p>
+            <h2>2. Information We Collect</h2>
+            <p>To provide a secure and functional quiz experience, we collect:</p>
+            <ul>
+                <li><strong>Personal Identity:</strong> Your Name, Email address, and Student Number for authentication.</li>
+                <li><strong>Academic Performance:</strong> Quiz responses, scores, and completion timestamps.</li>
+                <li><strong>Proctoring Data:</strong> Limited violation logs (e.g., app switching or screenshot attempts) to maintain exam integrity.</li>
+                <li><strong>Media Access:</strong> Camera access is used solely for QR code scanning and optional identity verification.</li>
+            </ul>
+
+            <h2>3. How We Use Your Data</h2>
+            <p>Data is used exclusively for educational purposes:</p>
+            <ul>
+                <li>To synchronize progress between student devices and teacher dashboards.</li>
+                <li>To generate analytics and scores for teacher review.</li>
+                <li>To prevent unauthorized use of the device during active quiz sessions via our <strong>Anti-Cheat</strong> technology.</li>
+            </ul>
+
+            <h2>4. Third-Party Services</h2>
+            <p>Our app utilizes <strong>Supabase</strong> for secure backend data storage and authentication. We do not sell, rent, or trade your personal information to third parties for marketing or advertising purposes.</p>
+
+            <h2>5. Data Rights & Security</h2>
+            <p>All data is encrypted in transit using SSL/TLS protocols. Users have the right to access their data or request account deletion as outlined in Section 6 below, or by contacting our support team.</p>
+
+            <h2 id="deletion-request">6. Data Deletion & Account Removal</h2>
+            <p>Users of <strong>eCQuiz</strong> (and/or their educational institutions) have the right to request the deletion of their account and all associated personal data at any time. This follows our commitment to your privacy and data autonomy.</p>
+            
+            <p><strong>Steps to request account deletion:</strong></p>
+            <ul>
+                <li>Send an inquiry email to <strong>support@aopalero.dev</strong> with the subject line "eCQuiz Account Deletion Request".</li>
+                <li>Include your full Name, the Student or Teacher ID associated with the account, and the registered email address.</li>
+                <li>You can also click here to <a href="mailto:support@aopalero.dev?subject=eCQuiz%20Account%20Deletion%20Request">Request Data Deletion via Email</a>.</li>
+            </ul>
+
+            <p><strong>Data Retention & Deletion Policy:</strong></p>
+            <ul>
+                <li><strong>Deleted Data:</strong> Upon processing your request, we will permanently remove your Name, Email Address, Student Number, and any proctoring violation logs from our active databases.</li>
+                <li><strong>Retained Data:</strong> We may retain anonymized academic scores (without any personally identifiable information) for long-term institutional reporting as required by school policies.</li>
+                <li><strong>Retention Period:</strong> Deletion requests are typically processed within 30 days. Some data may persist in encrypted backups for up to 90 days before being permanently overwritten.</li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>As an educational tool, eCQuiz complies with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>. We only collect data necessary for school-authorized educational activities.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have questions about this policy or wish to exercise your data rights, please contact us at: <strong>support@aopalero.dev</strong></p>
         </section>
 
         <footer>
+            <div style="margin-bottom: 12px;">
+                <a href="#deletion-request" style="color: var(--primary); text-decoration: none; font-weight: 600;">Data Deletion Request</a>
+            </div>
             &copy; 2026 eCQuiz. All rights reserved.
         </footer>
     </div>
